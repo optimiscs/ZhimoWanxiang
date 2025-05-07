@@ -1,0 +1,15 @@
+{
+  "token_usage": {
+    "total_tokens": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "requests": 0,
+    "calls_with_usage": 0
+  },
+  "cost": {
+    "prompt_cost": 0.0,
+    "completion_cost": 0.0,
+    "total_cost": 0.0
+  },
+  "timestamp": "2025-04-08 00:34:48"
+}

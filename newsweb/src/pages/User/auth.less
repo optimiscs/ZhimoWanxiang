@@ -1,0 +1,133 @@
+/* Auth page animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes glassMorph {
+  0% {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(0.98);
+  }
+  50% {
+    backdrop-filter: blur(12px);
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.01);
+  }
+  100% {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1);
+  }
+}
+
+.auth-card {
+  animation: glassMorph 1.5s ease-in-out;
+}
+
+.auth-form {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Frost glass global styles */
+.frost-glass {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+
+  &:hover {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* Stacked cards system */
+.stacked-cards-container {
+  position: relative;
+}
+
+.stacked-card {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.base-card {
+  position: relative;
+  z-index: 1;
+}
+
+.top-card {
+  z-index: 3;
+}
+
+.depth-card {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Different blur intensities */
+.high-blur {
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.medium-blur {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.light-blur {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Example layered animation */
+@keyframes stackedGlassMorph {
+  0% {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transform: translateZ(0) scale(1);
+  }
+  50% {
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.15);
+    transform: translateZ(5px) scale(1.01);
+  }
+  100% {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transform: translateZ(0) scale(1);
+  }
+}
+
+.stacked-card:not(.depth-card) {
+  animation: stackedGlassMorph 8s ease-in-out infinite;
+}
+
+/* Apply different animation durations for layered cards */
+.stacked-card:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.stacked-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.stacked-card:nth-child(3) {
+  animation-delay: 0.4s;
+}

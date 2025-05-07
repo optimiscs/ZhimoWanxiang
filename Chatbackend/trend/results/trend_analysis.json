@@ -1,0 +1,664 @@
+{
+  "summary": {
+    "analysis_time": "2025-04-08 11:31:26",
+    "day_hot_sum": 1186906.0,
+    "day_hot_level": "高",
+    "date_range": {
+      "start_date": "2025-04-01",
+      "end_date": "2025-04-07",
+      "total_days": 7
+    },
+    "total_events": 28,
+    "daily_events_count": 70,
+    "hourly_events_count": 120,
+    "hottest_event": {
+      "name": "小米SU7高速碰撞爆燃事件",
+      "hot": 786196.0,
+      "type": "企业"
+    },
+    "most_continuous_event": {
+      "name": "美国网红“甲亢哥”中国行",
+      "days": 7
+    },
+    "most_common_type": {
+      "type": "企业",
+      "count": 15,
+      "hot": 1775070.0
+    },
+    "most_common_tag": {
+      "tag": "危机",
+      "count": 9
+    }
+  },
+  "top_events": [
+    {
+      "date": "2025-04-01",
+      "day_hot_sum": 1820362.0,
+      "event_id": "174608c206dde85c10090603",
+      "event_name": "小米SU7高速碰撞爆燃事件",
+      "type": "企业",
+      "hot": 786196.0,
+      "proportion": 43.19,
+      "tags": [
+        "小米",
+        "危机"
+      ],
+      "start_time": "2025-03-29",
+      "point_pro": 100.0
+    },
+    {
+      "date": "2025-04-02",
+      "day_hot_sum": 1480622.0,
+      "event_id": "174608c206dde85c10090603",
+      "event_name": "小米SU7高速碰撞爆燃事件",
+      "type": "企业",
+      "hot": 368353.0,
+      "proportion": 24.88,
+      "tags": [
+        "小米",
+        "危机"
+      ],
+      "start_time": "2025-03-29",
+      "point_pro": 100.0
+    },
+    {
+      "date": "2025-04-07",
+      "day_hot_sum": 1262252.0,
+      "event_id": "6c2adcb077e03ed410090613",
+      "event_name": "全球股市巨震",
+      "type": "财经",
+      "hot": 358611.0,
+      "proportion": 28.41,
+      "tags": [
+        "股市"
+      ],
+      "start_time": "2025-04-07",
+      "point_pro": 100.0
+    },
+    {
+      "date": "2025-04-03",
+      "day_hot_sum": 1290949.0,
+      "event_id": "dcccce4486a4048110090580",
+      "event_name": "特朗普宣布实施“对等关税”措施",
+      "type": "国际",
+      "hot": 357897.0,
+      "proportion": 27.72,
+      "tags": [
+        "特朗普"
+      ],
+      "start_time": "2025-04-02",
+      "point_pro": 100.0
+    },
+    {
+      "date": "2025-04-01",
+      "day_hot_sum": 1820362.0,
+      "event_id": "81564dedb82d7e4210090566",
+      "event_name": "东部战区台岛演训",
+      "type": "社会",
+      "hot": 261172.0,
+      "proportion": 14.35,
+      "tags": [
+        "东部战区"
+      ],
+      "start_time": "2025-04-01",
+      "point_pro": 99.99
+    },
+    {
+      "date": "2025-04-02",
+      "day_hot_sum": 1480622.0,
+      "event_id": "81564dedb82d7e4210090566",
+      "event_name": "东部战区台岛演训",
+      "type": "社会",
+      "hot": 244232.0,
+      "proportion": 16.5,
+      "tags": [
+        "东部战区"
+      ],
+      "start_time": "2025-04-01",
+      "point_pro": 99.99
+    },
+    {
+      "date": "2025-04-07",
+      "day_hot_sum": 1262252.0,
+      "event_id": "cda55a8ae066e20d10090570",
+      "event_name": "美国网红“甲亢哥”中国行",
+      "type": "娱乐",
+      "hot": 197621.0,
+      "proportion": 15.66,
+      "tags": [
+        "网红"
+      ],
+      "start_time": "2025-03-24",
+      "point_pro": 99.99
+    },
+    {
+      "date": "2025-04-04",
+      "day_hot_sum": 924224.0,
+      "event_id": "185d470b3b104d8510090614",
+      "event_name": "尹锡悦被罢免总统职务",
+      "type": "国际",
+      "hot": 169407.0,
+      "proportion": 18.33,
+      "tags": [
+        "韩国"
+      ],
+      "start_time": "2025-04-04",
+      "point_pro": 100.0
+    },
+    {
+      "date": "2025-04-05",
+      "day_hot_sum": 749567.0,
+      "event_id": "93eb234b5715a75c10090375",
+      "event_name": "《乘风2025》开播",
+      "type": "娱乐",
+      "hot": 146932.0,
+      "proportion": 19.6,
+      "tags": [
+        "芒果TV"
+      ],
+      "start_time": "2025-03-21",
+      "point_pro": 100.0
+    },
+    {
+      "date": "2025-04-04",
+      "day_hot_sum": 924224.0,
+      "event_id": "93eb234b5715a75c10090375",
+      "event_name": "《乘风2025》开播",
+      "type": "娱乐",
+      "hot": 146515.0,
+      "proportion": 15.85,
+      "tags": [
+        "芒果TV"
+      ],
+      "start_time": "2025-03-21",
+      "point_pro": 99.99
+    }
+  ],
+  "continuity_analysis": [
+    {
+      "event_id": "cda55a8ae066e20d10090570",
+      "event_name": "美国网红“甲亢哥”中国行",
+      "days_appeared": 7,
+      "dates": [
+        "2025-04-01",
+        "2025-04-02",
+        "2025-04-03",
+        "2025-04-04",
+        "2025-04-05",
+        "2025-04-06",
+        "2025-04-07"
+      ]
+    },
+    {
+      "event_id": "93eb234b5715a75c10090375",
+      "event_name": "《乘风2025》开播",
+      "days_appeared": 7,
+      "dates": [
+        "2025-04-01",
+        "2025-04-02",
+        "2025-04-03",
+        "2025-04-04",
+        "2025-04-05",
+        "2025-04-06",
+        "2025-04-07"
+      ]
+    },
+    {
+      "event_id": "174608c206dde85c10090603",
+      "event_name": "小米SU7高速碰撞爆燃事件",
+      "days_appeared": 6,
+      "dates": [
+        "2025-04-01",
+        "2025-04-02",
+        "2025-04-03",
+        "2025-04-04",
+        "2025-04-05",
+        "2025-04-06"
+      ]
+    },
+    {
+      "event_id": "dcccce4486a4048110090580",
+      "event_name": "特朗普宣布实施“对等关税”措施",
+      "days_appeared": 6,
+      "dates": [
+        "2025-04-02",
+        "2025-04-03",
+        "2025-04-04",
+        "2025-04-05",
+        "2025-04-06",
+        "2025-04-07"
+      ]
+    },
+    {
+      "event_id": "55d9c38ac031503810090521",
+      "event_name": "缅甸发生7.9级地震",
+      "days_appeared": 4,
+      "dates": [
+        "2025-04-01",
+        "2025-04-02",
+        "2025-04-03",
+        "2025-04-05"
+      ]
+    },
+    {
+      "event_id": "658cb5bca09e04c910090561",
+      "event_name": "金饰价格涨到953元",
+      "days_appeared": 4,
+      "dates": [
+        "2025-04-01",
+        "2025-04-03",
+        "2025-04-05",
+        "2025-04-07"
+      ]
+    },
+    {
+      "event_id": "99673eec91dddc5110090515",
+      "event_name": "特朗普 对进口汽车征收25%关税",
+      "days_appeared": 4,
+      "dates": [
+        "2025-04-03",
+        "2025-04-04",
+        "2025-04-06",
+        "2025-04-07"
+      ]
+    },
+    {
+      "event_id": "eee524020139821e10090612",
+      "event_name": "电视剧《乌云之上》热播",
+      "days_appeared": 4,
+      "dates": [
+        "2025-04-03",
+        "2025-04-04",
+        "2025-04-05",
+        "2025-04-06"
+      ]
+    },
+    {
+      "event_id": "528db9b09ea103e810090607",
+      "event_name": "2025清明档电影票房破3亿",
+      "days_appeared": 4,
+      "dates": [
+        "2025-04-04",
+        "2025-04-05",
+        "2025-04-06",
+        "2025-04-07"
+      ]
+    },
+    {
+      "event_id": "81564dedb82d7e4210090566",
+      "event_name": "东部战区台岛演训",
+      "days_appeared": 3,
+      "dates": [
+        "2025-04-01",
+        "2025-04-02",
+        "2025-04-03"
+      ]
+    }
+  ],
+  "type_analysis": [
+    {
+      "type": "企业",
+      "count": 15,
+      "total_hot": 1775070.0
+    },
+    {
+      "type": "娱乐",
+      "count": 22,
+      "total_hot": 1625624.0
+    },
+    {
+      "type": "国际",
+      "count": 16,
+      "total_hot": 1458712.0
+    },
+    {
+      "type": "财经",
+      "count": 8,
+      "total_hot": 730303.0
+    },
+    {
+      "type": "社会",
+      "count": 6,
+      "total_hot": 659343.0
+    },
+    {
+      "type": "体育",
+      "count": 1,
+      "total_hot": 93952.0
+    },
+    {
+      "type": "互联网",
+      "count": 2,
+      "total_hot": 87232.0
+    }
+  ],
+  "tag_analysis": [
+    {
+      "tag": "危机",
+      "count": 9
+    },
+    {
+      "tag": "小米",
+      "count": 7
+    },
+    {
+      "tag": "黄金",
+      "count": 7
+    },
+    {
+      "tag": "网红",
+      "count": 7
+    },
+    {
+      "tag": "芒果TV",
+      "count": 7
+    },
+    {
+      "tag": "特朗普",
+      "count": 6
+    },
+    {
+      "tag": "缅甸",
+      "count": 4
+    },
+    {
+      "tag": "美国",
+      "count": 4
+    },
+    {
+      "tag": "电视剧",
+      "count": 4
+    },
+    {
+      "tag": "电影",
+      "count": 4
+    },
+    {
+      "tag": "东部战区",
+      "count": 3
+    },
+    {
+      "tag": "华为",
+      "count": 2
+    },
+    {
+      "tag": "韩国",
+      "count": 2
+    },
+    {
+      "tag": "政策",
+      "count": 1
+    },
+    {
+      "tag": "中关村论坛",
+      "count": 1
+    },
+    {
+      "tag": "河南",
+      "count": 1
+    },
+    {
+      "tag": "王楚钦",
+      "count": 1
+    },
+    {
+      "tag": "深圳航空",
+      "count": 1
+    },
+    {
+      "tag": "腾讯会议",
+      "count": 1
+    },
+    {
+      "tag": "哈尔滨",
+      "count": 1
+    }
+  ],
+  "event_trends": [
+    {
+      "event_id": "174608c206dde85c10090603",
+      "event_name": "小米SU7高速碰撞爆燃事件",
+      "type": "企业",
+      "trend_points": [
+        {
+          "date": "2025-04-01",
+          "hot": 786196.0,
+          "proportion": 43.19
+        },
+        {
+          "date": "2025-04-02",
+          "hot": 368353.0,
+          "proportion": 24.88
+        },
+        {
+          "date": "2025-04-03",
+          "hot": 110922.0,
+          "proportion": 8.59
+        },
+        {
+          "date": "2025-04-04",
+          "hot": 34048.0,
+          "proportion": 3.68
+        },
+        {
+          "date": "2025-04-05",
+          "hot": 19576.0,
+          "proportion": 2.61
+        },
+        {
+          "date": "2025-04-06",
+          "hot": 20644.0,
+          "proportion": 3.3
+        }
+      ]
+    },
+    {
+      "event_id": "81564dedb82d7e4210090566",
+      "event_name": "东部战区台岛演训",
+      "type": "社会",
+      "trend_points": [
+        {
+          "date": "2025-04-01",
+          "hot": 261172.0,
+          "proportion": 14.35
+        },
+        {
+          "date": "2025-04-02",
+          "hot": 244232.0,
+          "proportion": 16.5
+        },
+        {
+          "date": "2025-04-03",
+          "hot": 25753.0,
+          "proportion": 1.99
+        }
+      ]
+    },
+    {
+      "event_id": "55d9c38ac031503810090521",
+      "event_name": "缅甸发生7.9级地震",
+      "type": "国际",
+      "trend_points": [
+        {
+          "date": "2025-04-01",
+          "hot": 138514.0,
+          "proportion": 7.61
+        },
+        {
+          "date": "2025-04-02",
+          "hot": 114390.0,
+          "proportion": 7.73
+        },
+        {
+          "date": "2025-04-03",
+          "hot": 78026.0,
+          "proportion": 6.04
+        },
+        {
+          "date": "2025-04-05",
+          "hot": 36148.0,
+          "proportion": 4.82
+        }
+      ]
+    },
+    {
+      "event_id": "658cb5bca09e04c910090561",
+      "event_name": "金饰价格涨到953元",
+      "type": "财经",
+      "trend_points": [
+        {
+          "date": "2025-04-01",
+          "hot": 72766.0,
+          "proportion": 4.0
+        },
+        {
+          "date": "2025-04-03",
+          "hot": 54065.0,
+          "proportion": 4.19
+        },
+        {
+          "date": "2025-04-05",
+          "hot": 34551.0,
+          "proportion": 4.61
+        },
+        {
+          "date": "2025-04-07",
+          "hot": 32474.0,
+          "proportion": 2.57
+        }
+      ]
+    },
+    {
+      "event_id": "cda55a8ae066e20d10090570",
+      "event_name": "美国网红“甲亢哥”中国行",
+      "type": "娱乐",
+      "trend_points": [
+        {
+          "date": "2025-04-01",
+          "hot": 60401.0,
+          "proportion": 3.32
+        },
+        {
+          "date": "2025-04-02",
+          "hot": 87727.0,
+          "proportion": 5.92
+        },
+        {
+          "date": "2025-04-03",
+          "hot": 122079.0,
+          "proportion": 9.46
+        },
+        {
+          "date": "2025-04-04",
+          "hot": 80520.0,
+          "proportion": 8.71
+        },
+        {
+          "date": "2025-04-05",
+          "hot": 137930.0,
+          "proportion": 18.4
+        },
+        {
+          "date": "2025-04-06",
+          "hot": 96048.0,
+          "proportion": 15.36
+        },
+        {
+          "date": "2025-04-07",
+          "hot": 197621.0,
+          "proportion": 15.66
+        }
+      ]
+    },
+    {
+      "event_id": "892623c65ab1638c10090568",
+      "event_name": "国家标准《住宅项目规范》正式公布",
+      "type": "社会",
+      "trend_points": [
+        {
+          "date": "2025-04-01",
+          "hot": 47386.0,
+          "proportion": 2.6
+        }
+      ]
+    },
+    {
+      "event_id": "93eb234b5715a75c10090375",
+      "event_name": "《乘风2025》开播",
+      "type": "娱乐",
+      "trend_points": [
+        {
+          "date": "2025-04-01",
+          "hot": 42146.0,
+          "proportion": 2.32
+        },
+        {
+          "date": "2025-04-02",
+          "hot": 54833.0,
+          "proportion": 3.7
+        },
+        {
+          "date": "2025-04-03",
+          "hot": 51531.0,
+          "proportion": 3.99
+        },
+        {
+          "date": "2025-04-04",
+          "hot": 146515.0,
+          "proportion": 15.85
+        },
+        {
+          "date": "2025-04-05",
+          "hot": 146932.0,
+          "proportion": 19.6
+        },
+        {
+          "date": "2025-04-06",
+          "hot": 61082.0,
+          "proportion": 9.77
+        },
+        {
+          "date": "2025-04-07",
+          "hot": 45495.0,
+          "proportion": 3.6
+        }
+      ]
+    },
+    {
+      "event_id": "04338ce26ad0d0ab10090516",
+      "event_name": "2025中关村论坛开幕",
+      "type": "互联网",
+      "trend_points": [
+        {
+          "date": "2025-04-01",
+          "hot": 40136.0,
+          "proportion": 2.2
+        }
+      ]
+    },
+    {
+      "event_id": "3a680470d7ceb2e410090565",
+      "event_name": "华为发布2024年年报",
+      "type": "企业",
+      "trend_points": [
+        {
+          "date": "2025-04-01",
+          "hot": 26489.0,
+          "proportion": 1.46
+        }
+      ]
+    },
+    {
+      "event_id": "24444cd3adb0657110090572",
+      "event_name": "河南一地枯井发现近百具遗骸",
+      "type": "社会",
+      "trend_points": [
+        {
+          "date": "2025-04-01",
+          "hot": 25130.0,
+          "proportion": 1.38
+        }
+      ]
+    }
+  ]
+}

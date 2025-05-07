@@ -1,0 +1,17 @@
+{
+  "success": false,
+  "message": "下载音频或字幕失败",
+  "video_info": {
+    "title": "气象局再发布暴雨警报 各地武装部队驻守待命 | 八点最热报 30/12/2021",
+    "video_id": "ZT1saL58dJQ",
+    "url": "https://www.youtube.com/watch?v=ZT1saL58dJQ",
+    "channel": "Astro 本地圈",
+    "views": 100352,
+    "publish_date": null,
+    "thumbnail_url": null,
+    "duration": 217.0,
+    "source": "youtube"
+  },
+  "timestamp": "2025-04-22T20:58:52.125685",
+  "news_title": "中国气象局发布暴雨预警"
+}

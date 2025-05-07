@@ -1,0 +1,124 @@
+    # docker-compose.prod.yml - 用于服务器生产部署
+
+    services:
+      nginx: # 前端服务，使用 Nginx 托管静态文件
+        image: nginx:alpine
+        container_name: nginx_prod
+        ports:
+          - "80:80"   # 暴露标准的 HTTP 端口
+          # - "443:443" # 如果配置了 HTTPS/SSL，添加这一行
+        volumes:
+          - ./dist:/usr/share/nginx/html # 挂载部署脚本上传的预构建前端文件 (dist 目录)
+          - ./nginx.conf:/etc/nginx/nginx.conf:ro # 挂载 Nginx 配置文件 (只读)
+          # 如果使用 HTTPS，在这里添加证书卷挂载
+        networks:
+          - app-network
+        depends_on:
+          - backend
+        restart: unless-stopped # 容器退出时自动重启
+
+      backend:
+        build:
+          context: ./ChatBackend # 在服务器上使用上传的代码构建后端镜像
+          dockerfile: Dockerfile # 重要：此 Dockerfile 应配置为使用 Gunicorn/Waitress 运行！
+        container_name: chat_backend_prod
+        # 不需要 'ports' - Nginx 会代理请求
+        networks:
+          - app-network
+        depends_on:
+          - db # Gunicorn 服务依赖数据库
+          - redis # 可能需要连接 Redis (例如用于缓存)
+        env_file:
+          - .env # 从服务器上的 .env 文件加载配置 (来自本地的 .env.server)
+        # env_file 中的变量会覆盖这里的设置（如果存在）
+        environment:
+          MONGO_URI: mongodb://db:27017/chatdb
+          FLASK_ENV: production
+          FLASK_DEBUG: 0 # 确保关闭 Debug 模式
+          CELERY_BROKER_URL: redis://redis:6379/0 # Celery Broker 地址
+          CELERY_RESULT_BACKEND: redis://redis:6379/1 # Celery 结果后端地址
+        dns:
+          - 8.8.8.8
+          - 1.1.1.1
+        restart: unless-stopped # 容器退出时自动重启
+
+      db:
+        image: mongo:latest
+        container_name: mongodb_prod
+        # 不需要 'ports' - 只有后端需要通过内部网络访问
+        volumes:
+          - mongo-data:/data/db
+        networks:
+          - app-network
+        restart: unless-stopped # 数据库也建议自动重启
+
+      redis: # Redis 服务
+        image: redis:alpine
+        container_name: redis_prod # 给容器起个名字
+        restart: always
+        ports:
+          - "127.0.0.1:6379:6379" # 仅暴露给本机，更安全
+        volumes:
+          - redis_data:/data
+        networks: # 明确指定网络
+          - app-network
+
+      # 新增 Celery Worker 服务
+      celeryworker:
+        build:
+          context: ./ChatBackend # 使用与 backend 相同的代码和 Dockerfile
+          dockerfile: Dockerfile
+        container_name: celery_worker_prod
+        restart: always
+        networks:
+          - app-network
+        depends_on:
+          - redis
+          - db
+        env_file:
+          - .env
+        environment:
+          PYTHONPATH: /app
+          MONGO_URI: mongodb://db:27017/chatdb
+          FLASK_ENV: production
+          FLASK_DEBUG: 0
+          CELERY_BROKER_URL: redis://redis:6379/0
+          CELERY_RESULT_BACKEND: redis://redis:6379/1
+        dns:
+          - 8.8.8.8
+          - 1.1.1.1
+        command: celery -A celery_app worker --loglevel=info
+
+      # 新增 Celery Beat 服务 (定时任务调度器)
+      celerybeat:
+        build:
+          context: ./ChatBackend # 使用与 backend 相同的代码和 Dockerfile
+          dockerfile: Dockerfile
+        container_name: celery_beat_prod
+        restart: always
+        networks:
+          - app-network
+        depends_on:
+          - redis
+          - db
+        env_file:
+          - .env
+        environment:
+          PYTHONPATH: /app
+          MONGO_URI: mongodb://db:27017/chatdb
+          FLASK_ENV: production
+          FLASK_DEBUG: 0
+          CELERY_BROKER_URL: redis://redis:6379/0
+          CELERY_RESULT_BACKEND: redis://redis:6379/1
+        dns:
+          - 8.8.8.8
+          - 1.1.1.1
+        command: celery -A celery_app beat --loglevel=info -s /tmp/celerybeat-schedule
+
+    networks:
+      app-network:
+        driver: bridge
+
+    volumes:
+      mongo-data:
+      redis_data:

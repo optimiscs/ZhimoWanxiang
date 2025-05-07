@@ -1,0 +1,141 @@
+.gradient-text {
+    font-size: 3em;
+    background: linear-gradient(45deg, rgba(30, 134, 242,1), rgba(255, 255, 255, 0.1));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+/* 可以为其他文本元素定义特定的字体大小 */
+.date-text {
+  font-size: 1em; /* 设置日期文本的字体大小 */
+}
+
+.news-title {
+  font-size: 1.8em; 
+}
+
+.heat-value-text {
+  font-size: 1.5em; /* 设置热度值文本的字体大小 */
+}
+
+/* Card hover effect */
+.ant-card-hoverable:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(30, 134, 242, 0.1) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .gradient-text {
+    font-size: 2em;
+  }
+}
+
+/* Animation for statistics */
+.ant-statistic-content-value {
+  transition: all 0.3s ease;
+}
+
+.ant-statistic:hover .ant-statistic-content-value {
+  transform: scale(1.1);
+}
+
+/* Enhanced tag styling */
+.ant-tag {
+  transition: all 0.3s ease;
+}
+
+.ant-tag:hover {
+  transform: scale(1.05);
+}
+
+/* 领域标签选择样式 */
+.ant-checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ant-checkbox-wrapper {
+  margin-right: 8px !important;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.3s;
+  background-color: rgba(30, 134, 242, 0.05);
+}
+
+.ant-checkbox-wrapper:hover {
+  background-color: rgba(30, 134, 242, 0.1);
+}
+
+.ant-checkbox-wrapper-checked {
+  background-color: rgba(30, 134, 242, 0.15);
+  font-weight: 500;
+}
+
+/* 搜索按钮样式 */
+.search-button {
+  transition: all 0.3s ease;
+}
+
+.search-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(30, 134, 242, 0.2);
+}
+
+.ant-checkbox-group {
+  background-color: transparent !important; /* 透明背景 */
+  /* 或设置白色背景 */
+  /* background-color: #ffffff !important; */
+}
+.ant-checkbox-group .ant-checkbox {
+  /* 若 checkbox 本身也需调整样式，可继续覆盖 */
+  margin-right: 8px; /* 示例：调整复选框间距 */
+}
+
+/* 分页样式 */
+.ant-pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.ant-pagination-item {
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.ant-pagination-item:hover {
+  transform: scale(1.05);
+  border-color: rgba(30, 134, 242, 1);
+}
+
+.ant-pagination-item-active {
+  background-color: rgba(30, 134, 242, 1);
+  border-color: rgba(30, 134, 242, 1);
+}
+
+.ant-pagination-item-active a {
+  color: white !important;
+}
+
+.ant-pagination-jump-next, 
+.ant-pagination-jump-prev,
+.ant-pagination-prev,
+.ant-pagination-next {
+  transition: all 0.3s;
+}
+
+.ant-pagination-jump-next:hover, 
+.ant-pagination-jump-prev:hover,
+.ant-pagination-prev:hover,
+.ant-pagination-next:hover {
+  transform: scale(1.05);
+}
+
+.custom-pagination {
+  padding: 16px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
